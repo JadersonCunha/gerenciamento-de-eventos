@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento do Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Eventos</h1>
+
+        <div class="section">
+            <label for="garcons">Número de garçons:</label>
+            <input type="number" id="garcons" min="1">
+        </div>
+
+        <div class="section">
+            <label for="horas">Horas do evento:</label>
+            <input type="number" id="horas" min="1">
+        </div>
+
+        <button onclick="calcularCusto()">Calcular Custo dos Garçons</button>
+        <p id="custoGarcons"></p>
+
+        <div class="section">
+            <label for="convidados">Quantidade de convidados:</label>
+            <input type="number" id="convidados" min="30" max="350">
+        </div>
+
+        <button onclick="calcularAlimentos()">Calcular Alimentos e Bebidas</button>
+        <p id="alimentos"></p>
+
+        <button onclick="escolherAuditorio()">Escolher Auditório</button>
+        <p id="auditorio"></p>
+
+        <a href="auditorios.html"><button>Ver Tabela de Auditórios</button></a>
+    </div>
+
+    <footer>
+        <p>2024 - Jaderson Cunha</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

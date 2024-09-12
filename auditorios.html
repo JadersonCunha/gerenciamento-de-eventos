@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Auditórios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabela de Auditórios</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Auditório</th>
+                    <th>Capacidade Máxima</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alfa</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Beta</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Gama</td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html"><button>Voltar para Página Inicial</button></a>
+        <button onclick="gerarPDF()">Gerar Relatório em PDF</button>
+    </div>
+
+    <footer>
+        <p>2024 - Jaderson Cunha</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
